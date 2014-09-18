@@ -6,6 +6,11 @@ An RSpec formatter to take up minimal space
 I find an RSpec + Guard workflow very useful when I'm developing, but find most of the default formatter too 'noisy' when I'm working in a single file.
 This formatter helps by reducing the amount of information presented when encountering failures, while presenting enough information to see where the issue is.
 
+###Passing Spec
+![Passing Spec](img/passing.png)
+###Failing Spec
+![Passing Spec](img/failing.png)
+
 ## Installation
 
 Add this line to your application's Gemfile:
