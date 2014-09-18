@@ -47,14 +47,14 @@ module RSpec
 
         def dump_failure(example, index)
           output.puts
-          dump_failure_info(example)
+          dump_failure_info(example, index)
         end
 
-        def dump_failure_info(example)
+        def dump_failure_info(example, index)
           exception = example.exception
           message = strip_whitespace(exception.message)
           failed_line = strip_whitespace(read_failed_line(example))
-          output.print "#{cyan failed_line}\t #{red message }"
+          output.print "#{index+1}) #{cyan failed_line}\t #{red message }"
         end
 
         def dump_summary(run)
@@ -110,7 +110,7 @@ module RSpec
         end
 
         def read_failed_line(example)
-          example.example.location
+          example.example.location.split("/").last.to_s
         end
 
 
