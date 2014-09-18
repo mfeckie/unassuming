@@ -7,8 +7,8 @@ Gem::Specification.new do |spec|
   spec.version       = "0.0.1"
   spec.authors       = ["Martin Feckie"]
   spec.email         = ["mfeckie@gmail.com"]
-  spec.summary       = %q{Unassuming is an RSpec reporter that doesn't take much space!}
-  spec.description   = %q{Designed to live in a small terminal of ~6 lines}
+  spec.summary       = %q{Unassuming is an RSpec formatter that doesn't take much space!}
+  spec.description   = %q{RSpec formatter designed to live in a small terminal of ~6 lines}
   spec.homepage      = ""
   spec.license       = "MIT"
 
