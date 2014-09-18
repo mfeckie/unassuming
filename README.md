@@ -19,7 +19,7 @@ And then execute:
 add to `.rspec`
 
 ```ruby
---format RSpec::Core::Formatters::Unassuming
+--format Unassuming
 ```
 
 ## Contributing
